@@ -1,0 +1,23 @@
+[color]
+	ui = true
+	diff = auto
+	status = auto
+	branch = auto
+[user]
+	name = pga
+	email = elgato@secured.de
+[core]
+	autocrlf = input
+	safecrlf = true
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+	wc = whatchanged -10
+	pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+[credential]
+	helper = cache --timeout=3600
