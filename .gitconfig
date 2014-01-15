@@ -19,5 +19,6 @@
 	dump = cat-file -p
 	wc = whatchanged -10
 	pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+	un = ls-files --others --exclude-standard
 [credential]
 	helper = cache --timeout=3600
